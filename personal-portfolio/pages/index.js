@@ -1,14 +1,13 @@
-import React from "react";
-import { Header } from "../components/Header";
-import { Highlight } from "@/components/Highlight";
 import { Chip } from "@/components/Chip";
+import { Highlight } from "@/components/Highlight";
+import { Header } from "../components/Header";
 
 export default function Home() {
   return (
-    <div>
+    <div className="dark:bg-black dark:text-white">
       <Header />
       <Highlight />
-      <div className="flex flex-col gap-2 items-center justify-center mt-20">
+      <div className="flex flex-col items-center justify-center gap-2 mt-20">
         <Chip label="About me" />
         <Chip label={"Skills"} />
         <Chip label={"Experience"} />
