@@ -1,17 +1,13 @@
-import { Chip } from "@/components/Chip";
-import { Highlight } from "@/components/Highlight";
-import { Header } from "../components/Header";
+import { WorkSection, SkillSection, Header, Container } from "../components";
 
 export default function Home() {
   return (
-    <div className="dark:bg-black dark:text-white">
+    <div>
       <Header />
-      <Highlight />
-      <div className="flex flex-col items-center justify-center gap-2 mt-20">
-        <Chip label="About me" />
-        <Chip label={"Skills"} />
-        <Chip label={"Experience"} />
-      </div>
+      <Container>
+        <SkillSection />
+        <WorkSection />
+      </Container>
     </div>
   );
 }
