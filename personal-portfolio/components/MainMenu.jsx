@@ -38,9 +38,15 @@ function MobileMenu() {
         <Menu />
       </button>
       {visible && <div className="fixed inset-0 bg-slate-400/70"></div>}
-      <div className={`fixed top-0 bottom-0 w-3/4 transition-all bg-white ${visible ? "right-0" : "-right-full"}`}>
+      <div
+        className={`fixed top-0 bottom-0 w-3/4 transition-all bg-white ${
+          visible ? "right-0" : "-right-full"
+        }`}
+      >
         <div className="p-8 text-2xl">Mobile Menu</div>
-        <button onClick={closeMenu}>close</button>
+        <button onClick={closeMenu} className="dark:text-black">
+          close
+        </button>
       </div>
     </>
   );
